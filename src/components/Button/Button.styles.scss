@@ -1,0 +1,9 @@
+@use '../../styles/variables';
+
+.primary-button {
+  padding: 2rem;
+  background-color: variables.$primary;
+  color: variables.$darkBlue;
+  font-weight: bold;
+  border: none;
+}
