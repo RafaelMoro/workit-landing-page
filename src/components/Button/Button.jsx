@@ -1,16 +1,23 @@
-import { string } from "prop-types"
+import { string, bool } from "prop-types"
 import "./Button.styles.scss"
 
-const Button = ({ text }) => {
+const Button = ({ text, secondary }) => {
+  const buttonCssClasses = !secondary ? "primary-button" : "secondary-button"
+
   return (
-    <button className="primary-button">{text}</button>
+    <button className={buttonCssClasses}>
+      { (!secondary) ? text : (<span className="secondary-button--span">{text}</span>) }
+    </button>
   )
 }
 
 Button.propTypes = {
-  text: string
+  text: string,
+  secondary: bool
 }
 
-Button.defaultProps = {}
+Button.defaultProps = {
+  secondary: false,
+}
 
 export { Button }

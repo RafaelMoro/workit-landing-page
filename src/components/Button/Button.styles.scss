@@ -1,9 +1,30 @@
 @use '../../styles/variables';
 
 .primary-button {
+  border: none;
   padding: 2rem;
   background-color: variables.$primary;
   color: variables.$darkBlue;
   font-weight: bold;
-  border: none;
+
+  &:hover {
+    border: 2px solid variables.$primary;
+    background-color: variables.$darkBlue;
+    color: variables.$primary;
+  }
+}
+
+.secondary-button {
+  background-color: inherit;
+  color: variables.$white;
+  font-weight: bold;
+
+  &:hover {
+    color: variables.$primary;
+  }
+}
+
+.secondary-button--span {
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid variables.$primary;
 }
