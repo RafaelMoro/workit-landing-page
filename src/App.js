@@ -1,11 +1,10 @@
 import './styles/App.scss';
-import { Button } from './components/Button/Button';
-import { Logo } from './components/Logo/Logo';
+import { Header } from './templates/Header/Header';
 
 function App() {
   return (
     <div className="App">
-      <Logo />
+      <Header />
     </div>
   );
 }

@@ -1,0 +1,8 @@
+@use './variables';
+
+.header {
+  background-color: variables.$darkBlue;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+}

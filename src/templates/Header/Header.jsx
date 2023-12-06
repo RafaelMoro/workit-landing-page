@@ -1,9 +1,10 @@
+import '../../styles/Header.scss';
 import { Logo, Button } from "../../components";
 
 const Header = () => (
-  <header>
+  <header className="header">
     <Logo />
-    <Button secondary text="" />
+    <Button secondary text="Apply for access" />
   </header>
 )
 
